@@ -1,0 +1,50 @@
+git status  >>> See staged and unstaged changes
+git init
+git branch -m main
+git add .
+git add filename
+git commit -m "added test file"
+
+git config --global user.name "Ismail Pradhan"
+git config --global user.email "IshPradhan@gmail.com"
+git config --global --list
+
+git show --name-only  >>> See committed files in the latest commit
+git log --name-only   >>>> See committed files across multiple commits
+git ls-files		>>>> See a list of all files currently tracked
+
+Repository on GitHub
+https://github.com/IshPradhan001/git_practice.git
+
+Connecting my local git repository to GitHub.com
+git config --global user.name ishpradhan001
+git config --global user.email ishpradhan@gmail.com
+
+My Global .gitConfig file sits here >>> C:\Users\ishpr
+and has this:
+[user]
+	email = ishpradhan@gmail.com
+	name = ishpradhan001
+
+Grabbed this from GitHub and ran it in Git Bash
+git remote add origin https://github.com/IshPradhan001/git_practice.git
+
+My local gitConfig file has this
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/IshPradhan001/git_practice.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+
+
+
+
+
+
+
+
